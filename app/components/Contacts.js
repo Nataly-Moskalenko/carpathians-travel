@@ -1,6 +1,6 @@
 export default function Contacts() {
   return (
-    <section className="min-h-screen" >
+    <section id="Contacts" className="min-h-screen" >
       <h2>Contact us</h2>
       <div className="flex justify-between">
         <ul>

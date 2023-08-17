@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="min-h-screen" >
+    <section id="About" className="min-h-screen" >
       <h2>Who we are</h2>
       <p>
         a team of enthusiasts who are fully committed to the mission of creating unforgettable and
