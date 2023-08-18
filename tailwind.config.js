@@ -20,11 +20,7 @@ module.exports = {
       dark: 'rgba(2, 15, 8, 0.85)',
       'dark-gray': 'rgba(2, 15, 8, 0.75)',
       'light-gray': 'rgba(2, 15, 8, 0.5)',
-    },
-    fontFamily: {
-      inter: 'var(--inter-font)',
-      logo: 'var(--logo-font)',
-    },
+    },    
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

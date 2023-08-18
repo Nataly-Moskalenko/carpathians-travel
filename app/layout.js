@@ -1,8 +1,8 @@
 import './globals.css';
-import { Inter, Karantina } from '@next/font/google';
+import { Inter, Karantina } from 'next/font/google';
 
-const inter = Inter({ variable: '--inter-font' });
-const karantina = Karantina({ variable: '--logo-font' });
+const inter = Inter({ subsets: ['latin'] });
+// const karantina = Karantina({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Carpathians Travel',
@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${karantina.variable}`}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
