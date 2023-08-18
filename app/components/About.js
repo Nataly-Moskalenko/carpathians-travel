@@ -1,6 +1,9 @@
 export default function About() {
   return (
-    <section id="About">
+    <section
+      id="About"
+      className="text-white h-[826px] bg-light-gray w-full bg-image-about bg-center bg-no-repeat bg-cover pt-20 pr-20 pb-20 pl-20"
+    >
       <h2>Who we are</h2>
       <p>
         a team of enthusiasts who are fully committed to the mission of creating unforgettable and
