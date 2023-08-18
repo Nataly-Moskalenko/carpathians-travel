@@ -2,7 +2,7 @@ import FormContacts from './FormContacts';
 
 export default function Contacts() {
   return (
-    <section id="Contacts" className="min-h-screen">
+    <section id="Contacts">
       <h2>Contact us</h2>
       <div className="flex justify-between">
         <ul>

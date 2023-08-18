@@ -1,6 +1,6 @@
 export default function Gallery() {
   return (
-    <section id="Gallery" className="min-h-screen" >
+    <section id="Gallery">
       <h2>Our gallery</h2>
     </section>
   );

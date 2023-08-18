@@ -20,7 +20,15 @@ module.exports = {
       dark: 'rgba(2, 15, 8, 0.85)',
       'dark-gray': 'rgba(2, 15, 8, 0.75)',
       'light-gray': 'rgba(2, 15, 8, 0.5)',
-    },    
+    },
+    letterSpacing: {
+      tight: '-0.04em',
+      wider: '0.09em',
+      widest: '2.281rem',
+    },
+    fontSize: {
+      '8xl': '6.125rem',
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
