@@ -1,3 +1,5 @@
+'use client';
+
 import { useForm } from 'react-hook-form';
 
 export default function FormContacts() {
@@ -9,45 +11,36 @@ export default function FormContacts() {
 
   return (
     <form onSubmit={handleSubmit((data) => console.log(data))} className="flex flex-col">
-      <label>
-        Full name
-        <input
-          {...register('fullName', {
-            required: true,
-            pattern: /^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$/,
-            placeholder: 'John Smith',
-            type: 'text',
-            autocomplete: 'off',
-            value: 'fullName',
-          })}
-        />
-      </label>
-      {errors.fulltName && <p>Incorrect name</p>}
-      <label>
-        E-mail
-        <input
-          {...register('email', {
-            required: true,
-            pattern: /^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,3}$/,
-            placeholder: 'johnsmith@email.com',
-            type: 'email',
-            autocomplete: 'off',
-            value: 'email',
-          })}
-        />
-      </label>
+      <label htmlFor="fullname">Full name</label>
+      <input
+        {...register('fullName', {
+          required: true,
+          minLength: 1,
+          maxLength: 20,
+        })}
+        name="fullName"
+        placeholder="John Smith"
+        type="text"
+      />
+      {errors.fullName && <p>Incorrect name</p>}
+      <label htmlFor="email">E-mail</label>
+      <input
+        {...register('email', {
+          required: true,
+          validate: (input) => isEmail(input),
+        })}
+        name="email"
+        type="email"
+        placeholder="johnsmith@email.com"
+      />
       {errors.email && <p>Invalid email</p>}
-      <label>
-        Message
-        <textarea
-          {...register('comment', {
-            required: true,
-            type: 'text',
-            autocomplete: 'off',
-            value: 'comment',
-          })}
-        />
-      </label>
+      <label htmlFor="message">Message</label>
+      <textarea
+        {...register('message', {
+          required: true,
+        })}
+        name="message"
+      />
       <button type="submit">Send</button>
     </form>
   );
