@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="p-0 lg:p-6 text-white relative md:flex md:justify-between max-[767px]:w-[280px] max-[767px]:m-auto">
+    <section className="p-0 lg:p-6 text-white relative md:flex md:justify-between w-[280px] md:w-full m-auto md:m-0">
       <h1 className="relative ml-auto md:absolute top-0 right-0 lg:top-3 lg:right-6 w-[113px] md:w-[221px] lg:w-[295px]">      
         <span className="text-[37px] leading-[1.2] font-medium md:text-[67px] lg:text-[98px] tracking-normal">
           7
@@ -25,8 +25,8 @@ export default function Hero() {
           Hoverla / Yaremche / Zakarpattia / Vorokhta / Synevyr Lake / Bukovel
         </p>
       </div>
-      <div className="md:self-end w-[280px] md:w-[230px] lg:w-[294px]">
-        <p className="lg:text-[18px] font-extralight leading-6">
+      <div className="mt-6 md:mt-[144px] lg:mt-[304px] w-[280px] md:w-[230px] lg:w-[294px]">
+        <p className="text-[14px] font-extralight leading-[20px] md:text-[16px] lg:text-[18px] leading-[24px]">
           We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy
           stunning views, exciting expeditions, and the best service!
         </p>
