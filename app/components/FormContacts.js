@@ -96,7 +96,7 @@ export default function FormContacts() {
       </div>
       <label
         htmlFor="message"
-        className="text-[12px] font-extralight leading-6 tracking-[2.4px] mt-10"
+        className="text-[12px] font-extralight leading-6 tracking-[2.4px] mt-[19px]"
       >
         Message
       </label>

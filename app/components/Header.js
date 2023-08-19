@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 
 export default function Header() {
   return (
-    <header className="flex justify-between h-6 pr-6 pl-6 mb-12 text-white ">
+    <header className="flex justify-between h-6 pr-6 pl-6 mb-9 md:mb-16 lg:mb-12 text-white">
       <div>CarpTravel</div>
       <nav className="flex gap-x-14 text-[14px] font-normal tracking-[1.4px]">
         <Link
