@@ -17,11 +17,11 @@ export default function Hero() {
           Carpathian’s Secrets
         </span>
       </h2>
-      <p className="text-base font-extralight tracking-[1.44px] mt-36">
+      <p className="text-base font-extralight tracking-[1.44px] mt-[148px]">
         Hoverla / Yaremche / Zakarpattia / Vorokhta / Synevyr Lake / Bukovel
       </p>
       {/* <div className="text-lg text-white font-extralight leading-6 w-80 mt--36px"> */}
-      <p className="order-5 text-lg font-extralight leading-6 w-80">
+      <p className="order-5 text-[18px] font-extralight leading-6 w-[294px]">
         We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy
         stunning views, exciting expeditions, and the best service!
       </p>
