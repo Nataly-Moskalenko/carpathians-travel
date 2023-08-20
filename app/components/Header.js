@@ -6,7 +6,7 @@ import Logo from '../../public/logo.png';
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center h-6 lg:pr-6 lg:pl-6 mb-9 md:mb-[66px] lg:mb-[72px] text-white w-[280px] md:w-full m-auto md:m-0">
+    <header className="flex justify-between items-center h-6 lg:pr-6 lg:pl-6 mb-9 md:mb-[66px] lg:mb-[72px] text-white w-[280px] md:w-full mx-auto md:m-0">
       <div>
         <Image className="w-[59px] h-[21px] lg:w-[61px] lg:h-[22px]" src={Logo} alt="Logo CarpTravel" />
         <p className="font-[Karantina] text-[14px] font-[400] leading-[1.2]">

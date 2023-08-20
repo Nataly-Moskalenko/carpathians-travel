@@ -33,7 +33,8 @@ module.exports = {
       backgroundImage: {
         'image-home': 'url(../public/home.png)',
         'image-about': 'url(../public/about.png)',
-        'image-contacts': 'url(../public/contacts.png)',        
+        'image-contacts': 'url(../public/contacts.png)', 
+        'image-gallery': 'url(../public/gallery.png)',        
         // 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         // 'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
