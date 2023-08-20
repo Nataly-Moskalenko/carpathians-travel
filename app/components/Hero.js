@@ -21,7 +21,7 @@ export default function Hero() {
           <span className="text-[40px] md:text-[67px] lg:text-[98px] font-medium uppercase tracking-[-1.6px] md:tracking-[-2.68px] lg:tracking-[-3.92px] leading-[56px] md:leading-[1.2]">
             Uncover{' '}
           </span>
-          <span className="text-[40px] md:text-[67px] lg:text-[98px] font-thin uppercase lg:tracking-[-3.92px] leading-[56px] md:leading-[1.2]">
+          <span className="text-[40px] md:text-[67px] lg:text-[98px] font-thin uppercase tracking-[-1.6px] md:tracking-[-2.68px] lg:tracking-[-3.92px] leading-[56px] md:leading-[1.2]">
             Carpathian’s Secrets
           </span>
         </h2>

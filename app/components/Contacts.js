@@ -8,8 +8,12 @@ export default function Contacts() {
     >
       <div className="p-6">
         <h2 className="w-[606px]">
-          <span className="text-[98px] font-thin uppercase tracking-[-3.92px]">Contact </span>
-          <span className="text-[98px] font-medium uppercase tracking-[-3.92px]">us</span>
+          <span className="text-[40px] md:text-[67px] lg:text-[98px] font-thin uppercase tracking-[-1.6px] md:tracking-[-2.68px] lg:tracking-[-3.92px] leading-[56px] md:leading-[1.2]">
+            Contact{' '}
+          </span>
+          <span className="text-[40px] md:text-[67px] lg:text-[98px] font-medium uppercase tracking-[-1.6px] md:tracking-[-2.68px] lg:tracking-[-3.92px] leading-[56px] md:leading-[1.2]">
+            us
+          </span>
         </h2>
         <div className="flex justify-between mt-[71px]">
           <div className="w-[311px]">

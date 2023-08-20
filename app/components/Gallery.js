@@ -30,7 +30,7 @@ export default function Gallery() {
       className="text-white h-[788px] bg-light-gray w-full bg-image-about bg-center bg-no-repeat bg-cover p-20"
     >
       <h2>
-        <span className="text-[40px] md:text-[67px] lg:text-[98px] font-thin uppercase lg:tracking-[-3.92px] leading-[56px] md:leading-[1.2]">
+        <span className="text-[40px] md:text-[67px] lg:text-[98px] font-thin uppercase tracking-[-1.6px] md:tracking-[-2.68px] lg:tracking-[-3.92px] leading-[56px] md:leading-[1.2]">
           Our{' '}
         </span>
         <span className="text-[40px] md:text-[67px] lg:text-[98px] font-medium uppercase tracking-[-1.6px] md:tracking-[-2.68px] lg:tracking-[-3.92px] leading-[56px] md:leading-[1.2]">
@@ -52,13 +52,25 @@ export default function Gallery() {
       >
         {galeryImages.map((image) => (
           <SwiperSlide key={image.id}>
-            <Image className="w-[606px] h-[429px] ml-auto mr-auto" src={image.src} alt="Photo CarpTravel" />
+            <Image
+              className="w-[606px] h-[429px] ml-auto mr-auto"
+              src={image.src}
+              alt="Photo CarpTravel"
+            />
           </SwiperSlide>
         ))}
-        <button className="absolute text-white bottom-0" ref={prevRef}>
-          Back
+        <button
+          ref={prevRef}
+          className="text-[33px] font-thin uppercase ml-auto leading-[1.2] w-[294px]"
+        >
+          <p className="">Back</p>
         </button>
-        <button className="absolute right-0 bottom-0" ref={nextRef}>Next</button>
+        <button
+          className="absolute right-0 bottom-0 text-[33px] font-thin uppercase mr-auto leading-[1.2] w-[294px]"
+          ref={nextRef}
+        >
+          <p className="">Next</p>
+        </button>
       </Swiper>
     </section>
   );
