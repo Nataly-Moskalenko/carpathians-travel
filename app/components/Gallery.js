@@ -85,7 +85,7 @@ export default function Gallery() {
           ))}
           <button
             ref={prevRef}
-            className="absolute left-0 bottom-0 text-[33px] font-thin uppercase ml-auto leading-[1.2]"
+            className="text-[33px] font-thin uppercase ml-auto leading-[1.2]"
           >
             <p className="">Back</p>
           </button>
