@@ -18,10 +18,50 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
     rgb(var(--background-start-rgb));
+}
+
+.swiper-pagination-bullet {
+  width: 188px !important;
+  background-color: transparent !important;
+  justify-self: start;
+}
+.swiper-pagination-bullet-active {
+  background-color: transparent !important;
+  width: 188px !important;
+  position: relative;
+}
+
+.swiper-pagination-bullet-active::before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  rotate: 45deg;
+  position: absolute;
+  top: 8px;
+  left: -12px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  top: 420px !important;
+  text-align: start !important;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-pagination {
+    position: absolute;
+    top: 118px !important;
+    right: 0 !important;  
+  }
+}
+@media screen and (min-width: 1280px) {
+  .swiper-pagination {
+    position: absolute;
+    top: 136px !important;
+    left: 640px !important;
+  }
 }

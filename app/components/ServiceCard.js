@@ -25,10 +25,10 @@ export default function ServiceCard({ card }) {
         />
         <div className="lg:grow">
           <div className="flex flex-col md:flex-col-reverse lg:flex-row-reverse lg:justify-between">
-            <p className="self-end md:self-start mb-6 md:mb-0 md:mt-6 text-[12px] font-extralight leading-6 tracking-[2.4px] lg:w-[293px] lg:mt-0">
+            <p className="self-end md:self-start mb-6 md:mb-0 md:mt-[198px] text-[12px] font-extralight leading-6 tracking-[2.4px] lg:w-[293px] lg:mt-0">
               {card.text}
             </p>
-            <ul className="w-[188px] md:w-[204px] lg:w-[254px] flex flex-col gap-4 lg:gap-6">
+            {/* <ul className="w-[188px] md:w-[204px] lg:w-[254px] flex flex-col gap-4 lg:gap-6">
               <li className="relative before:content-[''] before:block before:w-[6px] before:h-[6px] before:rotate-45 before:bg-white before:absolute before:top-1 lg:before:top-2">
                 <h3 className="ml-3 text-[20px] md:text-[22px] lg:text-[28px] font-[500] uppercase leading-[17px] md:leading-[18px] lg:leading-[24px]">
                   {card.title}
@@ -54,9 +54,9 @@ export default function ServiceCard({ card }) {
                   {card.subtitles[3]}
                 </h3>
               </li>
-            </ul>
+            </ul> */}
           </div>
-          <p className="w-[280px] md:w-[221px] lg:w-[293px] mt-[34px] text-[14px] md:text-[13px] lg:text-[18px] font-[200] leading-[20px] lg:leading-[24px] lg:ml-auto">
+          <p className="w-[280px] md:w-[221px] lg:w-[293px] mt-[224px] md:mt-[34px] lg:mt-[244px] text-[14px] md:text-[13px] lg:text-[18px] font-[200] leading-[20px] lg:leading-[24px] lg:ml-auto">
             {card.description}
           </p>
         </div>

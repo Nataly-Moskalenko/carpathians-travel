@@ -66,13 +66,15 @@ const cards = [
   },
 ];
 
+const menu = ['ATVs Traveling', 'Rock climbing', 'Hot air ballooning', 'Skydiving', 'Rafting'];
+
 export default function Services() {
   return (
     <section
       id="Services"
       className="text-white h-[851px] md:h-[621px] lg:h-[779px] bg-light-gray w-full bg-image-services bg-center bg-no-repeat bg-cover pl-5 pr-5 pt-[56px] pb-[56px] md:pl-8 md:pr-8 md:pt-[64px] md:pb-[64px] lg:p-20"
     >
-      <div className="w-[320px] md:w-full mx-auto">
+      <div className="w-[320px] md:w-full mx-auto relative">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade]}
           effect="fade"
@@ -80,7 +82,14 @@ export default function Services() {
           spaceBetween={50}
           slidesPerView={1}
           autoplay={true}
-          loop={true}
+          loop={true}          
+          pagination={{
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+              return '<div class="' + className + '">' + menu[index] + '</div>';
+            },
+          }}
           scrollbar={{ draggable: true }}
         >
           {cards.map((card) => (
@@ -89,6 +98,16 @@ export default function Services() {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className="swiper-pagination absolute w-[188px] md:w-[204px] lg:w-[254px] flex flex-col gap-4 lg:gap-6 uppercase">
+          {menu.map((i, el) => (
+            <div
+              key={i}
+              className="text-[20px] md:text-[22px] lg:text-[28px] font-[500] uppercase leading-[17px] md:leading-[18px] lg:leading-[24px] w-[188px] md:w-[204px] lg:w-[254px] relative before:content-[''] before:block before:w-[6px] before:h-[6px] before:rotate-45 before:bg-white before:absolute before:top-1 lg:before:top-2"
+            >
+              {el}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
