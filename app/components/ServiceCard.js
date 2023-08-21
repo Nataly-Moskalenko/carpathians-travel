@@ -24,50 +24,35 @@ export default function ServiceCard({ card }) {
           alt={card.title}
         />
         <div className="lg:grow">
-          <div className="flex flex-col md:flex-col-reverse lg:block">
-            <p className="self-end md:self-start mb-6 md:mb-0 md:mt-6 lg:hidden text-[12px] font-extralight leading-6 tracking-[2.4px]">
+          <div className="flex flex-col md:flex-col-reverse lg:flex-row-reverse lg:justify-between">
+            <p className="self-end md:self-start mb-6 md:mb-0 md:mt-6 text-[12px] font-extralight leading-6 tracking-[2.4px] lg:w-[293px] lg:mt-0">
               {card.text}
             </p>
-            <ul className="flex flex-col gap-4 lg:gap-6">
-              <li className="lg:flex justify-between">
-                <h3 className="text-[20px] md:text-[22px] lg:text-[28px] font-[200] uppercase leading-[17px] md:leading-[18px] lg:leading-[24px]">
-                  ATVs Traveling
+            <ul className="w-[188px] md:w-[204px] lg:w-[254px] flex flex-col gap-4 lg:gap-6">
+              <li className="relative before:content-[''] before:block before:w-[6px] before:h-[6px] before:rotate-45 before:bg-white before:absolute before:top-1 lg:before:top-2">
+                <h3 className="ml-3 text-[20px] md:text-[22px] lg:text-[28px] font-[500] uppercase leading-[17px] md:leading-[18px] lg:leading-[24px]">
+                  {card.title}
                 </h3>
-                <p className="hidden lg:block text-[12px] font-extralight leading-6 tracking-[2.4px] lg:w-[293px]">
-                  Feel the adrenaline rush
-                </p>
               </li>
-              <li className="lg:flex justify-between">
-                <h3 className="text-[20px] md:text-[22px] lg:text-[28px] font-[200] uppercase leading-[17px] md:leading-[18px] lg:leading-[24px]">
-                  Rock climbing
+              <li>
+                <h3 className="opacity-50 text-[20px] md:text-[22px] lg:text-[28px] font-[200] uppercase leading-[17px] md:leading-[18px] lg:leading-[24px]">
+                  {card.subtitles[0]}
                 </h3>
-                <p className="hidden lg:block text-[12px] font-extralight leading-6 tracking-[2.4px] lg:w-[293px]">
-                  Destroy your limitations
-                </p>
               </li>
-              <li className="lg:flex justify-between">
-                <h3 className="w-[133px] text-[20px] md:text-[22px] lg:text-[28px] font-[200] uppercase leading-[17px] md:leading-[18px] lg:leading-[24px]">
-                  Hot air ballooning
+              <li>
+                <h3 className="opacity-50 text-[20px] md:text-[22px] lg:text-[28px] font-[200] uppercase leading-[17px] md:leading-[18px] lg:leading-[24px]">
+                  {card.subtitles[1]}
                 </h3>
-                <p className="hidden lg:block text-[12px] font-extralight leading-6 tracking-[2.4px] lg:w-[293px]">
-                  Get inspired
-                </p>
               </li>
-              <li className="lg:flex justify-between">
-                <h3 className="text-[20px] md:text-[22px] lg:text-[28px] font-[200] uppercase leading-[17px] md:leading-[18px] lg:leading-[24px]">
-                  Skydiving
+              <li>
+                <h3 className="opacity-50 text-[20px] md:text-[22px] lg:text-[28px] font-[200] uppercase leading-[17px] md:leading-[18px] lg:leading-[24px]">
+                  {card.subtitles[2]}
                 </h3>
-                <p className="hidden lg:block text-[12px] font-extralight leading-6 tracking-[2.4px] lg:w-[293px]">
-                  Overcome your fears
-                </p>
               </li>
-              <li className="lg:flex justify-between">
-                <h3 className="text-[20px] md:text-[22px] lg:text-[28px] font-[200] uppercase leading-[17px] md:leading-[18px] lg:leading-[24px]">
-                  Rafting
+              <li>
+                <h3 className="opacity-50 text-[20px] md:text-[22px] lg:text-[28px] font-[200] uppercase leading-[17px] md:leading-[18px] lg:leading-[24px]">
+                  {card.subtitles[3]}
                 </h3>
-                <p className="hidden lg:block text-[12px] font-extralight leading-6 tracking-[2.4px] lg:w-[293px]">
-                  Trust the flow
-                </p>
               </li>
             </ul>
           </div>

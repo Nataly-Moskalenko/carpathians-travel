@@ -47,22 +47,22 @@ export default function Contacts() {
               <ul>
                 <li>
                   <p className="text-[14px] md:text-[16px] lg:text-[18px] font-normal leading-6">
-                    facebook
+                    <a href='#' className='hover:underline'>facebook</a>
                   </p>
                 </li>
                 <li>
                   <p className="text-[14px] md:text-[16px] lg:text-[18px] font-normal leading-6">
-                    instagram
+                  <a href='#' className='hover:underline'>instagram</a>
                   </p>
                 </li>
                 <li>
                   <p className="text-[14px] md:text-[16px] lg:text-[18px] font-normal leading-6">
-                    youtube
+                  <a href='#' className='hover:underline'>youtube</a>
                   </p>
                 </li>
                 <li>
                   <p className="text-[14px] md:text-[16px] lg:text-[18px] font-normal leading-6">
-                    tiktok
+                  <a href='#' className='hover:underline'>tiktok</a>
                   </p>
                 </li>
               </ul>

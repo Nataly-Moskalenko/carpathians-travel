@@ -1,6 +1,4 @@
-'use client';
-
-import { Link } from 'react-scroll';
+import ButtonHero from './ButtonHero';
 
 export default function Hero() {
   return (
@@ -34,23 +32,7 @@ export default function Hero() {
           We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy
           stunning views, exciting expeditions, and the best service!
         </p>
-        <button
-          type="button"
-          className="mt-[24px] md:mt-[28px] bg-gray h-[53px] md:h-[50px] lg:h-[71px]"
-        >
-          <p className="pt-[18px] pb-[18px] md:pt-[14px] md:pb-[14px] lg:pt-[16px] lg:pb-[16px] pr-[64px] pl-[64px] text-[18px] lg:text-[32px] font-bold uppercase">
-            <Link
-              // activeClass="active"
-              to="Contacts"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              Join now
-            </Link>
-          </p>
-        </button>
+        <ButtonHero />
       </div>
     </section>
   );

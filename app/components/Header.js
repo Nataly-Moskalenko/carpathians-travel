@@ -18,7 +18,7 @@ export default function Header() {
       </button>
       <nav className="hidden md:flex md:gap-x-6 lg:gap-x-14 text-[14px] font-normal tracking-[1.4px]">
         <Link
-          // activeClass="active"
+          className='cursor-pointer hover:underline'
           to="About"
           spy={true}
           smooth={true}
@@ -29,7 +29,7 @@ export default function Header() {
         </Link>
 
         <Link
-          // activeClass="active"
+          className='cursor-pointer hover:underline'
           to="Services"
           spy={true}
           smooth={true}
@@ -39,7 +39,7 @@ export default function Header() {
           Services
         </Link>
         <Link
-          // activeClass="active"
+          className='cursor-pointer hover:underline'
           to="Career"
           spy={true}
           smooth={true}
@@ -49,7 +49,7 @@ export default function Header() {
           Career
         </Link>
         <Link
-          // activeClass="active"
+          className='cursor-pointer hover:underline'
           to="Gallery"
           spy={true}
           smooth={true}
@@ -59,7 +59,7 @@ export default function Header() {
           Gallery
         </Link>
         <Link
-          // activeClass="active"
+          className='cursor-pointer hover:underline'
           to="Contacts"
           spy={true}
           smooth={true}
