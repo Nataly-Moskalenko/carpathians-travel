@@ -9,7 +9,7 @@ module.exports = {
     screens: {
       sm: '320px',
       md: '768px',
-      lg: '1280px',
+      lg: '1440px',
     },
     colors: {
       white: '#ffffff',

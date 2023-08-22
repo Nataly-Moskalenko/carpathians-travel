@@ -26,15 +26,14 @@ body {
   width: 188px !important;
   background-color: transparent !important;
   justify-self: start;
-  height: 16px !important;
- padding-left: 0;
+  margin-bottom: 18px !important;   
 }
 .swiper-pagination-bullet-active {
   background-color: transparent !important;
   width: 188px !important;
-  height: 16px !important;
   position: relative;
-  padding-left: 16px;
+  margin-bottom: 18px !important;
+  padding-left: 16px !important;
 }
 
 .swiper-pagination-bullet-active::before {
@@ -52,7 +51,7 @@ body {
 .swiper-pagination {
   position: absolute;
   top: 420px !important;
-  text-align: start !important; 
+  text-align: start !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -60,10 +59,18 @@ body {
     top: 118px !important;
     left: 483px !important;
   }
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    width: 204px !important;
+  }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .swiper-pagination {
     top: 136px !important;
     left: 640px !important;
+  }
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    width: 254px !important;
   }
 }

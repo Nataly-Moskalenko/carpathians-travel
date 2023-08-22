@@ -25,9 +25,9 @@ export default function Gallery() {
   return (
     <section
       id="Gallery"
-      className="text-white h-[801px] md:h-[575px] lg:h-[788px] bg-light-gray w-full bg-image-gallery bg-center bg-no-repeat bg-cover pl-5 pr-5 pt-[56px] pb-[56px] md:pl-8 md:pr-8 md:pt-[64px] md:pb-[64px] lg:p-20"
+      className="text-white h-[801px] md:h-[575px] lg:h-[788px] bg-light-gray w-full bg-image-gallery bg-center bg-no-repeat bg-cover px-5 pt-[56px] pb-[56px] md:px-8 md:pt-[64px] md:pb-[64px] lg:p-20"
     >
-      <h2 className="block mb-6 md:mb-[72px] text-center lg:text-left lg:m-6">
+      <h2 className="mb-6 md:mb-[72px] text-center lg:text-left lg:m-6">
         <span className="text-[40px] md:text-[67px] lg:text-[98px] font-thin uppercase tracking-[-1.6px] md:tracking-[-2.68px] lg:tracking-[-3.92px] leading-[56px] md:leading-[1.2]">
           Our{' '}
         </span>
@@ -82,12 +82,12 @@ export default function Gallery() {
           ))}
           <button
             ref={prevRef}
-            className="text-[33px] font-thin uppercase ml-auto leading-[1.2]"
+            className="text-[33px] font-thin uppercase leading-[1.2]"
           >
             <p className="">Back</p>
           </button>
           <button
-            className="absolute right-0 bottom-0 text-[33px] font-thin uppercase mr-auto leading-[1.2]"
+            className="absolute right-0 bottom-0 text-[33px] font-thin uppercase leading-[1.2]"
             ref={nextRef}
           >
             <p className="">Next</p>

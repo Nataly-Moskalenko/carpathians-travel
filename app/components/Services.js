@@ -65,9 +65,9 @@ export default function Services() {
   return (
     <section
       id="Services"
-      className="text-white h-[851px] md:h-[621px] lg:h-[779px] bg-light-gray w-full bg-image-services bg-center bg-no-repeat bg-cover pl-5 pr-5 pt-[56px] pb-[56px] md:pl-8 md:pr-8 md:pt-[64px] md:pb-[64px] lg:p-20"
+      className="text-white h-[851px] md:h-[621px] lg:h-[779px] bg-light-gray w-full bg-image-services bg-center bg-no-repeat bg-cover px-5 pt-[56px] pb-[56px] md:px-8 md:pt-[64px] md:pb-[64px] lg:p-20"
     >
-      <div className="w-[320px] md:w-full mx-auto relative">
+      <div className="w-[280px] md:w-full mx-auto relative">
         <Swiper
           modules={[Pagination, A11y, Autoplay, EffectFade]}
           effect="fade"
@@ -90,11 +90,11 @@ export default function Services() {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="swiper-pagination absolute w-[188px] md:w-[204px] lg:w-[254px] flex flex-col gap-4 lg:gap-6 uppercase">
+        <div className="swiper-pagination absolute w-[188px] md:w-[204px] lg:w-[254px] flex flex-col gap-4 lg:gap-6 uppercase text-[20px] md:text-[22px] lg:text-[28px] font-[500] leading-[17px] md:leading-[18px] lg:leading-[24px]">
           {menu.map((i, el) => (
             <div
               key={i}
-              className="swiper-item text-[20px] md:text-[22px] lg:text-[28px] font-[500] leading-[17px] md:leading-[18px] lg:leading-[24px] w-[188px] md:w-[204px] lg:w-[254px]"
+              className="text-[20px] md:text-[22px] lg:text-[28px] font-[500] leading-[17px] md:leading-[18px] lg:leading-[24px] w-[188px] md:w-[204px] lg:w-[254px]"
             >
               {el}
             </div>
