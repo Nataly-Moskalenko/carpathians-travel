@@ -1,13 +1,11 @@
 'use client';
 
 import { React, useRef, useState } from 'react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import { Navigation, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 
 import Image from 'next/image';
 import Gallery1 from '../../public/gallery1.jpg';
@@ -62,7 +60,7 @@ export default function Gallery() {
       </ul>
       <div className="hidden md:block">
         <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+          modules={[Navigation, A11y, Autoplay]}
           spaceBetween={24}
           slidesPerView={1}
           navigation={{
@@ -71,8 +69,7 @@ export default function Gallery() {
           }}
           onInit={() => setInit(true)}
           autoplay={true}
-          loop={true}
-          scrollbar={{ draggable: true }}
+          loop={true}          
         >
           {galeryImages.map((image) => (
             <SwiperSlide key={image.id}>

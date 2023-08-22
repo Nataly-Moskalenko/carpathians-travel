@@ -4,7 +4,7 @@ export default function Contacts() {
   return (
     <section
       id="Contacts"
-      className="text-white h-[856px] md:h-[691px] lg:h-[762px] bg-light-gray w-full bg-image-contacts bg-center bg-no-repeat bg-cover pl-5 pr-5 pt-[56px] pb-[56px] md:pl-8 md:pr-8 md:pt-[64px] md:pb-[64px] lg:p-20"
+      className="text-white h-[856px] md:h-[691px] lg:h-[762px] bg-dark-gray w-full bg-image-contacts bg-center bg-no-repeat bg-cover pl-5 pr-5 pt-[56px] pb-[56px] md:pl-8 md:pr-8 md:pt-[64px] md:pb-[64px] lg:p-20"
     >
       <div className="lg:p-6 w-[320px] md:w-[768px] lg:w-full mx-auto">
         <h2 className="w-[606px]">

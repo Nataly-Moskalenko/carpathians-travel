@@ -20,22 +20,15 @@ module.exports = {
       dark: 'rgba(2, 15, 8, 0.85)',
       'dark-gray': 'rgba(2, 15, 8, 0.75)',
       'light-gray': 'rgba(2, 15, 8, 0.5)',
-    },
-    letterSpacing: {
-      tight: '-0.04em',
-      wider: '0.09em',
-      widest: '2.281rem',
-    },
-    fontSize: {
-      '8xl': '6.125rem',
+      modal: 'rgba(1, 10, 5, 0.75)',
     },
     extend: {
       backgroundImage: {
         'image-home': 'url(../public/home.png)',
         'image-about': 'url(../public/about.png)',
-        'image-contacts': 'url(../public/contacts.png)', 
+        'image-contacts': 'url(../public/contacts.png)',
         'image-gallery': 'url(../public/gallery.png)',
-        'image-services': 'url(../public/services.png)',        
+        'image-services': 'url(../public/services.png)',
         // 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         // 'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },

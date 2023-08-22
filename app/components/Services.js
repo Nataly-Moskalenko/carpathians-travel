@@ -1,14 +1,12 @@
 'use client';
 
 import { React } from 'react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import { Pagination, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade } from 'swiper/modules';
 
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 import 'swiper/css/effect-fade';
 
 import ServiceCard from './ServiceCard';
@@ -22,7 +20,6 @@ const cards = [
   {
     number: '01',
     title: 'ATVs Traveling',
-    subtitles: ['Rock climbing', 'Hot air ballooning', 'Skydiving', 'Rafting'],
     text: 'Feel the adrenaline rush',
     description:
       'Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.',
@@ -31,7 +28,6 @@ const cards = [
   {
     number: '02',
     title: 'Rock climbing',
-    subtitles: ['ATVs Traveling', 'Hot air ballooning', 'Skydiving', 'Rafting'],
     text: 'Destroy your limitations',
     description:
       'Overcome the peaks of the Carpathians in a unique way - climbing. Make your own way to the heights and find inner peace in the embrace of the mighty rocks.',
@@ -40,7 +36,6 @@ const cards = [
   {
     number: '03',
     title: 'Hot air ballooning',
-    subtitles: ['ATVs Traveling', 'Rock climbing', 'Skydiving', 'Rafting'],
     text: 'Get inspired',
     description:
       'Feel Zen over the mountain peaks! Hot air ballooning gives you incredible impressions and panoramas of the Carpathians that seem endless.',
@@ -49,7 +44,6 @@ const cards = [
   {
     number: '04',
     title: 'Skydiving',
-    subtitles: ['ATVs Traveling', 'Rock climbing', 'Hot air ballooning', 'Rafting'],
     text: 'Overcome your fears',
     description:
       "Fly in the sky over the Carpathians! Experienced instructors will help you realize your dream of free flight. Remember the incredible emotions and panoramas from a bird's eye view forever.",
@@ -58,7 +52,6 @@ const cards = [
   {
     number: '05',
     title: 'Rafting',
-    subtitles: ['ATVs Traveling', 'Rock climbing', 'Hot air ballooning', 'Skydiving'],
     text: 'Trust the flow',
     description:
       'Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.',
@@ -66,7 +59,7 @@ const cards = [
   },
 ];
 
-const menu = ['ATVs Traveling', 'Rock climbing', 'Hot air ballooning', 'Skydiving', 'Rafting'];
+const menu = Object.values(cards.map((card) => card.title));
 
 export default function Services() {
   return (
@@ -76,13 +69,13 @@ export default function Services() {
     >
       <div className="w-[320px] md:w-full mx-auto relative">
         <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade]}
+          modules={[Pagination, A11y, Autoplay, EffectFade]}
           effect="fade"
           fadeEffect={{ crossFade: true }}
           spaceBetween={50}
           slidesPerView={1}
           autoplay={true}
-          loop={true}          
+          loop={true}
           pagination={{
             el: '.swiper-pagination',
             clickable: true,
@@ -90,7 +83,6 @@ export default function Services() {
               return '<div class="' + className + '">' + menu[index] + '</div>';
             },
           }}
-          scrollbar={{ draggable: true }}
         >
           {cards.map((card) => (
             <SwiperSlide key={card.number}>
@@ -102,7 +94,7 @@ export default function Services() {
           {menu.map((i, el) => (
             <div
               key={i}
-              className="text-[20px] md:text-[22px] lg:text-[28px] font-[500] uppercase leading-[17px] md:leading-[18px] lg:leading-[24px] w-[188px] md:w-[204px] lg:w-[254px] relative before:content-[''] before:block before:w-[6px] before:h-[6px] before:rotate-45 before:bg-white before:absolute before:top-1 lg:before:top-2"
+              className="swiper-item text-[20px] md:text-[22px] lg:text-[28px] font-[500] leading-[17px] md:leading-[18px] lg:leading-[24px] w-[188px] md:w-[204px] lg:w-[254px]"
             >
               {el}
             </div>

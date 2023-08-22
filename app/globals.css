@@ -26,11 +26,15 @@ body {
   width: 188px !important;
   background-color: transparent !important;
   justify-self: start;
+  height: 16px !important;
+ padding-left: 0;
 }
 .swiper-pagination-bullet-active {
   background-color: transparent !important;
   width: 188px !important;
+  height: 16px !important;
   position: relative;
+  padding-left: 16px;
 }
 
 .swiper-pagination-bullet-active::before {
@@ -42,25 +46,23 @@ body {
   rotate: 45deg;
   position: absolute;
   top: 8px;
-  left: -12px;
+  left: 0;
 }
 
 .swiper-pagination {
   position: absolute;
   top: 420px !important;
-  text-align: start !important;
+  text-align: start !important; 
 }
 
 @media screen and (min-width: 768px) {
   .swiper-pagination {
-    position: absolute;
     top: 118px !important;
-    right: 0 !important;  
+    left: 483px !important;
   }
 }
 @media screen and (min-width: 1280px) {
   .swiper-pagination {
-    position: absolute;
     top: 136px !important;
     left: 640px !important;
   }
