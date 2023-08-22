@@ -1,34 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## CarpTravel
 
-## Getting Started
+This project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-First, run the development server:
+This project offers you unforgettable and extraordinary trips to the most beautiful parts of the Carpathians: Hoverla, Yaremche, Zakarpattia, Vorokhta, Synevyr Lake, Bukovel.
+The project goal is not just to show you the natural wonders of the mountains, but to provide you with a deep immersion in their magical atmosphere.
+Each of tours is aimed at unlocking your potential, enriching your spiritual world and creating
+unforgettable memories.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+The navigation menu contains the sections available on the landing page. When clicking on the corresponding item, smooth scrolling to the corresponding section occurs. React-scroll is used for smooth navigation through sections.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+React-hook-form is used for form validation and Tailwind CSS is used for style validation errors.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Swiper is used in the Gallery and Services sections.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+An infinite slider is implemented in the Gallery section (on tablet and desktop). You can change the slide by clicking the buttons or by dragging.
 
-## Learn More
+In the Service section, the appearance of the picture is implemented using the Fade effect. You can change the slide by clicking on the element.
 
-To learn more about Next.js, take a look at the following resources:
+The markup is adaptive - mobile from 320px, tablet from 768px, desktop from 1440px.
+Mobile first approach is used.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Tailwind CSS was used for styling.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<div align="center">
+  <img src="./public/CarpTravel1.jpg" width="1200" height="auto"/>
+  <img src="./public/CarpTravel2.jpg" width="1200" height="auto"/>
+  <img src="./public/CarpTravel3.jpg" width="1200" height="auto"/>
+  <img src="./public/CarpTravel4.jpg" width="1200" height="auto"/>
+  <img src="./public/CarpTravel5.jpg" width="1200" height="auto"/>
+  <img src="./public/CarpTravel6.jpg" width="1200" height="auto"/>
+</div>

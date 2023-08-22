@@ -90,11 +90,11 @@ export default function Services() {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="swiper-pagination absolute w-[188px] md:w-[204px] lg:w-[254px] flex flex-col gap-4 lg:gap-6 uppercase text-[20px] md:text-[22px] lg:text-[28px] font-[500] leading-[17px] md:leading-[18px] lg:leading-[24px]">
+        <div className="swiper-pagination absolute w-[188px] md:w-[204px] lg:w-[254px] flex flex-col gap-4 lg:gap-6 uppercase text-[20px] md:text-[22px] lg:text-[24px] font-[500] leading-[17px] md:leading-[18px] lg:leading-[24px]">
           {menu.map((i, el) => (
             <div
               key={i}
-              className="text-[20px] md:text-[22px] lg:text-[28px] font-[500] leading-[17px] md:leading-[18px] lg:leading-[24px] w-[188px] md:w-[204px] lg:w-[254px]"
+              className="text-[20px] md:text-[22px] lg:text-[24px] font-[500] leading-[17px] md:leading-[18px] lg:leading-[24px] w-[188px] md:w-[204px] lg:w-[254px]"
             >
               {el}
             </div>
