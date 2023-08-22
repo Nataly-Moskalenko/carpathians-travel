@@ -35,27 +35,15 @@ export default function Gallery() {
           gallery
         </span>
       </h2>
-      <ul className='flex flex-col gap-6 md:hidden'>
+      <ul className="flex flex-col gap-6 md:hidden">
         <li>
-        <Image
-                className="w-[280px] h-[187px] mx-auto"
-                src={Gallery1}
-                alt="Photo CarpTravel"
-              />
+          <Image className="w-[280px] h-[187px] mx-auto" src={Gallery1} alt="Photo CarpTravel" />
         </li>
         <li>
-        <Image
-                className="w-[280px] h-[187px] mx-auto"
-                src={Gallery2}
-                alt="Photo CarpTravel"
-              />
+          <Image className="w-[280px] h-[187px] mx-auto" src={Gallery2} alt="Photo CarpTravel" />
         </li>
         <li>
-        <Image
-                className="w-[280px] h-[187px] mx-auto"
-                src={Gallery3}
-                alt="Photo CarpTravel"
-              />
+          <Image className="w-[280px] h-[187px] mx-auto" src={Gallery3} alt="Photo CarpTravel" />
         </li>
       </ul>
       <div className="hidden md:block">
@@ -69,7 +57,7 @@ export default function Gallery() {
           }}
           onInit={() => setInit(true)}
           autoplay={true}
-          loop={true}          
+          loop={true}
         >
           {galeryImages.map((image) => (
             <SwiperSlide key={image.id}>
@@ -80,10 +68,7 @@ export default function Gallery() {
               />
             </SwiperSlide>
           ))}
-          <button
-            ref={prevRef}
-            className="text-[33px] font-thin uppercase leading-[1.2]"
-          >
+          <button ref={prevRef} className="text-[33px] font-thin uppercase leading-[1.2]">
             <p className="">Back</p>
           </button>
           <button

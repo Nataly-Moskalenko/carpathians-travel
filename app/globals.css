@@ -26,8 +26,9 @@ body {
   width: 188px !important;
   background-color: transparent !important;
   justify-self: start;
-  margin-bottom: 18px !important;   
+  margin-bottom: 18px !important;
 }
+
 .swiper-pagination-bullet-active {
   background-color: transparent !important;
   width: 188px !important;
@@ -64,6 +65,7 @@ body {
     width: 204px !important;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .swiper-pagination {
     top: 136px !important;
