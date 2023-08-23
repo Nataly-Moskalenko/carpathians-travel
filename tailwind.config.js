@@ -26,6 +26,7 @@ module.exports = {
       backgroundImage: {
         'image-home': 'url(../public/home.png)',
         'image-about': 'url(../public/about.png)',
+        'image-about1': 'url(../public/about1.png)',
         'image-contacts': 'url(../public/contacts.png)',
         'image-gallery': 'url(../public/gallery.png)',
         'image-services': 'url(../public/services.png)',        
