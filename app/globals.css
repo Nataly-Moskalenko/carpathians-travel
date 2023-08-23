@@ -24,11 +24,15 @@ body {
 
 .swiper-pagination-bullet {
   width: 188px !important;
+  height: 10px !important;
   background-color: transparent !important;
   justify-self: start;
-  margin-bottom: 18px !important;
+  margin-bottom: 8px !important;
 }
 
+.swiper-pagination-bullet:nth-child(3) {
+  height: 30px !important;
+}
 .swiper-pagination-bullet-active {
   background-color: transparent !important;
   width: 188px !important;
@@ -50,8 +54,10 @@ body {
 }
 
 .swiper-pagination {
+  width: 188px !important;
   position: absolute;
   top: 420px !important;
+  height: 200px !important;
   text-align: start !important;
 }
 
@@ -59,6 +65,7 @@ body {
   .swiper-pagination {
     top: 118px !important;
     left: 483px !important;
+    width: 204px !important;   
   }
   .swiper-pagination-bullet,
   .swiper-pagination-bullet-active {
@@ -68,11 +75,14 @@ body {
 
 @media screen and (min-width: 1440px) {
   .swiper-pagination {
+    width: 254px !important;
     top: 136px !important;
     left: 640px !important;
+    height: 240px !important;
   }
   .swiper-pagination-bullet,
   .swiper-pagination-bullet-active {
     width: 254px !important;
+
   }
 }
