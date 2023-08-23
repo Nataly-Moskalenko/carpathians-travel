@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section
       id="About"
-      className="text-white h-[873px] [480px]:h-[833px] md:h-[697px] lg:h-[824px] bg-light-gray w-full bg-image-about1 [480px]:bg-image-about bg-center bg-no-repeat bg-cover pl-5 pr-5 pt-[56px] pb-[56px] md:pl-8 md:pr-8 md:pt-[64px] md:pb-[64px] lg:p-20"
+      className="text-white h-[873px] [480px]:h-[833px] md:h-[697px] lg:h-[824px] bg-light-gray w-full bg-image-about480 m:bg-image-about768 bg-center m:bg-left md:bg-image bg-no-repeat bg-cover pl-5 pr-5 pt-[56px] pb-[56px] md:pl-8 md:pr-8 md:pt-[64px] md:pb-[64px] lg:p-20"
     >
       <div className="p:0 lg:p-6">
         <div className="md:flex justify-between lg:gap-6 lg:justify-start">
