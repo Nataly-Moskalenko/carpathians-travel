@@ -13,9 +13,9 @@ import Gallery2 from '../../public/gallery2.jpg';
 import Gallery3 from '../../public/gallery3.jpg';
 
 const galeryImages = [
-  { id: 1, src: Gallery1 },
-  { id: 2, src: Gallery2 },
-  { id: 3, src: Gallery3 },
+  { id: 1, src: Gallery1, title: "Carpathian mountains" },
+  { id: 2, src: Gallery2, title: "Carpathian lake" }, 
+  { id: 3, src: Gallery3, title: "Carpathian forest" },
 ];
 
 export default function Gallery() {
@@ -36,15 +36,9 @@ export default function Gallery() {
         </span>
       </h2>
       <ul className="flex flex-col gap-6 md:hidden">
-        <li>
-          <Image className="w-[280px] h-[187px] mx-auto" src={Gallery1} alt="Photo CarpTravel" />
-        </li>
-        <li>
-          <Image className="w-[280px] h-[187px] mx-auto" src={Gallery2} alt="Photo CarpTravel" />
-        </li>
-        <li>
-          <Image className="w-[280px] h-[187px] mx-auto" src={Gallery3} alt="Photo CarpTravel" />
-        </li>
+      {galeryImages.map((image) => (<li key={image.id}>
+          <Image className="w-[280px] h-[187px] mx-auto" src={image.src} alt={image.title} />
+        </li>))}        
       </ul>
       <div className="hidden md:block">
         <Swiper
@@ -64,14 +58,19 @@ export default function Gallery() {
               <Image
                 className="md:w-[415px] md:h-[294px] lg:w-[606px] lg:h-[429px] mx-auto"
                 src={image.src}
-                alt="Photo CarpTravel"
+                alt={image.title}
               />
             </SwiperSlide>
           ))}
-          <button ref={prevRef} className="text-[33px] font-thin uppercase leading-[1.2]">
+          <button
+            type="button"
+            ref={prevRef}
+            className="text-[33px] font-thin uppercase leading-[1.2]"
+          >
             <p className="">Back</p>
           </button>
           <button
+            type="button"
             className="absolute right-0 bottom-0 text-[33px] font-thin uppercase leading-[1.2]"
             ref={nextRef}
           >

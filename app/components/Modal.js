@@ -3,10 +3,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-scroll';
 
+const sections = ['About', 'Services', 'Gallery', 'Contacts'];
+
 export default function Modal({ onClick }) {
   return ReactDOM.createPortal(
     <div className="z-70 fixed h-screen w-full top-0 left-0 bg-light-gray">
-      <div className="text-white max-w-[320px] h-full bg-modal z-77 mx-auto relative">
+      <div className="text-white w-[320px] h-full bg-modal z-77 mx-auto relative">
         <button
           onClick={onClick}
           type="button"
@@ -15,46 +17,19 @@ export default function Modal({ onClick }) {
           Close
         </button>
         <nav className="pt-[170px] text-center flex flex-col gap-[48px] text-[18px] font-normal leading-[1.2] tracking-[1.8px]">
-          <Link
-            className="cursor-pointer hover:underline"
-            to="About"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
-            About
-          </Link>
-          <Link
-            className="cursor-pointer hover:underline"
-            to="Services"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
-            Services
-          </Link>
-          <Link
-            className="cursor-pointer hover:underline"
-            to="Gallery"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
-            Gallery
-          </Link>
-          <Link
-            className="cursor-pointer hover:underline"
-            to="Contacts"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={500}
-          >
-            Contacts
-          </Link>
+          {sections.map((section) => (
+            <Link
+              key={section}
+              className="cursor-pointer hover:underline"
+              to={section}
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              {section}
+            </Link>
+          ))}
         </nav>
       </div>
     </div>,
