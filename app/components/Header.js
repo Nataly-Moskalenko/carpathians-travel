@@ -1,9 +1,10 @@
 'use client';
 
+import { useState } from 'react';
 import { Link } from 'react-scroll';
+
 import Logo from './Logo';
 import Modal from './Modal';
-import { useState } from 'react';
 
 export default function Header() {
   const [showModal, setShowModal] = useState(false);
@@ -11,7 +12,7 @@ export default function Header() {
   const sections = ['About', 'Services', 'Gallery', 'Contacts'];
 
   return (
-    <header className="flex justify-between items-center h-6 lg:pr-6 lg:pl-6 mb-9 md:mb-[66px] lg:mb-[72px] text-white w-[280px] md:w-full mx-auto md:m-0">
+    <header className="flex justify-between items-center h-6 lg:pr-6 lg:pl-6 mb-9 md:mb-[66px] lg:mb-[72px] text-white w-[280px] md:w-full mx-auto md:m-0 max-w-[1440px] lg:mx-auto">
       <Logo />
       <button
         type="button"

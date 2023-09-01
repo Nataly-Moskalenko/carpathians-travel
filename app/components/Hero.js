@@ -2,7 +2,7 @@ import ButtonHero from './ButtonHero';
 
 export default function Hero() {
   return (
-    <section className="p-0 lg:p-6 text-white relative md:flex md:justify-between w-[280px] md:w-full m-auto md:m-0">
+    <section className="p-0 lg:p-6 text-white relative md:flex md:justify-between w-[280px] md:w-full mx-auto md:m-0 max-w-[1440px] lg:mx-auto">
       <h1 className="relative ml-auto md:absolute top-0 right-0 lg:top-3 lg:right-6 w-[113px] md:w-[221px] lg:w-[295px]">
         <span className="text-[37px] leading-[1.2] font-medium md:text-[67px] lg:text-[98px] tracking-normal">
           7

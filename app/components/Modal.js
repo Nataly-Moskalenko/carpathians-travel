@@ -7,8 +7,8 @@ const sections = ['About', 'Services', 'Gallery', 'Contacts'];
 
 export default function Modal({ onClick }) {
   return ReactDOM.createPortal(
-    <div className="z-70 fixed h-screen w-full top-0 left-0 bg-light-gray">
-      <div className="text-white w-[320px] h-full bg-modal z-77 mx-auto relative">
+    <div className="z-70 fixed h-screen w-[100vw] top-0 left-0 bg-light-gray">
+      <div className="text-white max-w-[320px] h-full bg-modal z-77 mx-auto relative">
         <button
           onClick={onClick}
           type="button"
@@ -26,6 +26,7 @@ export default function Modal({ onClick }) {
               smooth={true}
               offset={50}
               duration={500}
+              onClick={onClick}
             >
               {section}
             </Link>

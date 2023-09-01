@@ -10,6 +10,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
 import ServiceCard from './ServiceCard';
+
 import Photo01 from '../../public/service1.jpg';
 import Photo02 from '../../public/service2.jpg';
 import Photo03 from '../../public/service3.jpg';
@@ -67,7 +68,7 @@ export default function Services() {
       id="Services"
       className="text-white h-[851px] md:h-[621px] lg:h-[779px] bg-light-gray w-full bg-image-services bg-center bg-no-repeat bg-cover px-5 pt-[56px] pb-[56px] md:px-8 md:pt-[64px] md:pb-[64px] lg:p-20"
     >
-      <div className="w-[280px] md:w-full mx-auto relative z-0">
+      <div className="w-[280px] md:w-full mx-auto relative z-0 max-w-[1440px] lg:mx-auto">
         <Swiper
           modules={[Pagination, A11y, Autoplay, EffectFade]}
           effect="fade"

@@ -4,7 +4,7 @@ export default function About() {
       id="About"
       className="text-white h-[873px] [480px]:h-[833px] md:h-[697px] lg:h-[824px] bg-light-gray w-full bg-image-about480 m:bg-image-about768 bg-center m:bg-left md:bg-image bg-no-repeat bg-cover pl-5 pr-5 pt-[56px] pb-[56px] md:pl-8 md:pr-8 md:pt-[64px] md:pb-[64px] lg:p-20"
     >
-      <div className="p:0 lg:p-6">
+      <div className="p:0 lg:p-6 max-w-[1440px] lg:mx-auto">
         <div className="md:flex justify-between lg:gap-6 lg:justify-start">
           <h2 className="w-[280px] md:w-[408px] lg:w-[606px]">
             <span className="text-[40px] md:text-[67px] lg:text-[98px] font-thin uppercase tracking-[-1.6px] md:tracking-[-2.68px] lg:tracking-[-3.92px] leading-[56px] md:leading-[1.2]">
