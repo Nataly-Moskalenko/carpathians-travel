@@ -2,11 +2,12 @@
 
 import { React, useRef, useState } from 'react';
 import Image from 'next/image';
-import { Navigation, A11y, Autoplay } from 'swiper/modules';
+import { Navigation, A11y, Autoplay, EffectCoverflow } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/effect-coverflow';
 
 import Gallery1 from '../../public/gallery1.jpg';
 import Gallery2 from '../../public/gallery2.jpg';
@@ -16,6 +17,9 @@ const galeryImages = [
   { id: 1, src: Gallery1, title: 'Carpathian mountains' },
   { id: 2, src: Gallery2, title: 'Carpathian lake' },
   { id: 3, src: Gallery3, title: 'Carpathian forest' },
+  { id: 4, src: Gallery1, title: 'Carpathian mountains' },
+  { id: 5, src: Gallery2, title: 'Carpathian lake' },
+  { id: 6, src: Gallery3, title: 'Carpathian forest' },
 ];
 
 export default function Gallery() {
@@ -45,9 +49,8 @@ export default function Gallery() {
         </ul>
         <div className="hidden md:block">
           <Swiper
-            modules={[Navigation, A11y, Autoplay]}
-            spaceBetween={24}
-            slidesPerView={1}
+            modules={[Navigation, A11y, Autoplay, EffectCoverflow]}            
+            slidesPerView={3}
             navigation={{
               prevEl: prevRef.current,
               nextEl: nextRef.current,
@@ -55,6 +58,14 @@ export default function Gallery() {
             onInit={() => setInit(true)}
             autoplay={true}
             loop={true}
+            centeredSlides={true}
+            effect={'coverflow'}
+            coverflowEffect={{
+              rotate: 0,              
+              scale: 0.5,
+              modifier: 1,
+              slideShadows: true,
+            }}
           >
             {galeryImages.map((image) => (
               <SwiperSlide key={image.id}>
