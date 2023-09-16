@@ -12,7 +12,7 @@ export default function Modal({ onClick }) {
         <button
           onClick={onClick}
           type="button"
-          className="uppercase text-[14px] font-normal tracking-[1.4px] absolute right-[20px] top-[36px]"
+          className="uppercase text-[14px] font-normal tracking-[1.4px] absolute right-[20px] top-[36px] hover:font-bold focus:font-bold"
         >
           Close
         </button>

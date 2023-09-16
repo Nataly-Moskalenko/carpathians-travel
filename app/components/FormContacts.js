@@ -15,7 +15,7 @@ export default function FormContacts() {
       className="form md:flex gap-5 lg:flex-col w-[280px] md:w-[704px] lg:w-[607px]"
     >
       <div className="md:flex md:flex-col lg:flex-row">
-        <div>
+        <div className="relative">
           <label
             htmlFor="fullname"
             className="text-[12px] font-extralight leading-6 tracking-[2.4px]"
@@ -34,7 +34,7 @@ export default function FormContacts() {
             className="text-[13px] lg:text-[20px] font-extralight leading-6 bg-gray w-[280px] md:w-[221px] lg:w-[293px]"
           />
           {errors.fullName && (
-            <p className="flex items-center justify-end">
+            <p className="absolute right-0 top-[52px] flex items-center justify-end">
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M4.375 4.375L13.625 13.625M13.625 4.375L4.375 13.625"
@@ -51,7 +51,7 @@ export default function FormContacts() {
             </p>
           )}
         </div>
-        <div>
+        <div className="relative">
           <label htmlFor="email" className="text-[12px] font-extralight leading-6 tracking-[2.4px]">
             E-mail
           </label>
@@ -66,7 +66,7 @@ export default function FormContacts() {
             className="text-[13px] lg:text-[20px] font-extralight leading-6 bg-gray w-[280px] md:w-[221px] lg:w-[293px]"
           />
           {errors.email && (
-            <p className="flex items-center justify-end">
+            <p className="absolute right-0 top-[52px] flex items-center justify-end">
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M4.375 4.375L13.625 13.625M13.625 4.375L4.375 13.625"
@@ -85,10 +85,7 @@ export default function FormContacts() {
         </div>
       </div>
       <div>
-        <label
-          htmlFor="message"
-          className="text-[12px] font-extralight leading-6 tracking-[2.4px]"
-        >
+        <label htmlFor="message" className="text-[12px] font-extralight leading-6 tracking-[2.4px]">
           Message
         </label>
         <textarea
@@ -98,7 +95,10 @@ export default function FormContacts() {
           name="message"
           className="text-[13px] lg:text-[20px] font-extralight leading-6 bg-gray form-textarea resize-none w-[280px] md:w-[463px] lg:w-[607px] h-[193px] md:h-[221px] lg:h-[174px]"
         />
-        <button type="submit" className="block text-[30px] lg:text-[32px] font-medium uppercase ml-auto mt-6">
+        <button
+          type="submit"
+          className="block text-[30px] lg:text-[32px] font-thin hover:font-medium focus:font-medium uppercase ml-auto mt-6"
+        >
           Send
         </button>
       </div>

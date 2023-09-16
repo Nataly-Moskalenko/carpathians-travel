@@ -22,6 +22,12 @@ const galeryImages = [
   { id: 6, src: Gallery3, title: 'Carpathian forest' },
 ];
 
+const galeryImagesMobile = [
+  { id: 1, src: Gallery1, title: 'Carpathian mountains' },
+  { id: 2, src: Gallery2, title: 'Carpathian lake' },
+  { id: 3, src: Gallery3, title: 'Carpathian forest' },  
+];
+
 export default function Gallery() {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -41,7 +47,7 @@ export default function Gallery() {
           </span>
         </h2>
         <ul className="flex flex-col gap-6 md:hidden">
-          {galeryImages.map((image) => (
+          {galeryImagesMobile.map((image) => (
             <li key={image.id}>
               <Image className="w-[280px] h-[187px] mx-auto" src={image.src} alt={image.title} />
             </li>
@@ -60,6 +66,7 @@ export default function Gallery() {
             loop={true}
             centeredSlides={true}
             effect={'coverflow'}
+            grabCursor={true}
             coverflowEffect={{
               rotate: 0,              
               scale: 0.5,
@@ -68,24 +75,25 @@ export default function Gallery() {
             }}
           >
             {galeryImages.map((image) => (
-              <SwiperSlide key={image.id}>
-                <Image
-                  className="md:w-[415px] md:h-[294px] lg:w-[606px] lg:h-[429px] mx-auto"
+              <SwiperSlide key={image.id} className="md:w-[415px] md:h-[294px] lg:w-[606px] lg:h-[429px] mx-auto">
+                <Image                 
                   src={image.src}
                   alt={image.title}
+                  width={606}
+                  height={294}
                 />
               </SwiperSlide>
             ))}
             <button
               type="button"
               ref={prevRef}
-              className="text-[33px] font-thin uppercase leading-[1.2]"
+              className="text-[33px] font-thin hover:font-medium focus:font-medium uppercase leading-[1.2]"
             >
               <p className="">Back</p>
             </button>
             <button
               type="button"
-              className="absolute right-0 bottom-0 text-[33px] font-thin uppercase leading-[1.2]"
+              className="absolute right-0 bottom-0 text-[33px] font-thin hover:font-medium focus:font-medium uppercase leading-[1.2]"
               ref={nextRef}
             >
               <p className="">Next</p>

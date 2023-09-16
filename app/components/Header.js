@@ -16,7 +16,7 @@ export default function Header() {
       <Logo />
       <button
         type="button"
-        className="md:hidden uppercase text-[14px] font-normal tracking-[1.4px]"
+        className="md:hidden uppercase text-[14px] font-normal tracking-[1.4px] hover:font-bold focus:font-bold"
         onClick={toggleModal}
       >
         Menu

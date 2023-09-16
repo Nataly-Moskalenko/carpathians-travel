@@ -22,6 +22,8 @@ export default function ServiceCard({ card }) {
           className="mb-3 w-[280px] h-[213px] md:w-[463px] md:h-[370px] lg:w-[607px] lg:h-[429px]"
           src={card.image}
           alt={card.title}
+          width={607}
+          height={429}
         />
         <div className="lg:grow">
           <div className="flex flex-col md:flex-col-reverse lg:flex-row-reverse lg:justify-between">
