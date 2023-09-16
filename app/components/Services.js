@@ -11,11 +11,11 @@ import 'swiper/css/effect-fade';
 
 import ServiceCard from './ServiceCard';
 
-import Photo01 from '../../public/service1.jpg';
-import Photo02 from '../../public/service2.jpg';
-import Photo03 from '../../public/service3.jpg';
-import Photo04 from '../../public/service4.jpg';
-import Photo05 from '../../public/service5.jpg';
+import Photo01 from '@/public/images/service1.jpg';
+import Photo02 from '@/public/images/service2.jpg';
+import Photo03 from '@/public/images/service3.jpg';
+import Photo04 from '@/public/images/service4.jpg';
+import Photo05 from '@/public/images/service5.jpg';
 
 const cards = [
   {

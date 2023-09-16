@@ -12,7 +12,7 @@ export default function Header() {
   const sections = ['About', 'Services', 'Gallery', 'Contacts'];
 
   return (
-    <header className="relative max-w-[280px] md:max-w-[1232px] mx-auto">
+    <header className="relative max-w-[280px] md:max-w-[1392px] mx-auto">
       <div className="absolute top-[36px] left-0 flex justify-between items-center text-white w-[280px] md:w-full mx-auto px-5 md:px-8 lg:px-[80px]">
         <Logo />
         <button

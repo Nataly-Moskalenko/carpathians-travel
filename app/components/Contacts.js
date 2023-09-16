@@ -55,52 +55,44 @@ export default function Contacts() {
               <p className="text-[12px] font-extralight leading-[20px] lg:leading-6">Follow us</p>
               <ul>
                 <li>
-                  {/* <p className="text-[14px] md:text-[16px] lg:text-[18px] font-normal leading-6"> */}
-                    <a
-                      href="#"
-                      className="hover:underline text-[14px] md:text-[16px] lg:text-[18px] font-normal leading-6"
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                    >
-                      facebook
-                    </a>
-                  {/* </p> */}
+                  <a
+                    href="#"
+                    className="hover:underline text-[14px] md:text-[16px] lg:text-[18px] font-normal leading-6"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    facebook
+                  </a>
                 </li>
                 <li>
-                  {/* <p className="text-[14px] md:text-[16px] lg:text-[18px] font-normal leading-6"> */}
-                    <a
-                      href="#"
-                      className="hover:underline text-[14px] md:text-[16px] lg:text-[18px] font-normal leading-6"
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                    >
-                      instagram
-                    </a>
-                  {/* </p> */}
+                  <a
+                    href="#"
+                    className="hover:underline text-[14px] md:text-[16px] lg:text-[18px] font-normal leading-6"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    instagram
+                  </a>
                 </li>
                 <li>
-                  {/* <p className="text-[14px] md:text-[16px] lg:text-[18px] font-normal leading-6"> */}
-                    <a
-                      href="#"
-                      className="hover:underline text-[14px] md:text-[16px] lg:text-[18px] font-normal leading-6"
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                    >
-                      youtube
-                    </a>
-                  {/* </p> */}
+                  <a
+                    href="#"
+                    className="hover:underline text-[14px] md:text-[16px] lg:text-[18px] font-normal leading-6"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    youtube
+                  </a>
                 </li>
                 <li>
-                  {/* <p className="text-[14px] md:text-[16px] lg:text-[18px] font-normal leading-6"> */}
-                    <a
-                      href="#"
-                      className="hover:underline text-[14px] md:text-[16px] lg:text-[18px] font-normal leading-6"
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                    >
-                      tiktok
-                    </a>
-                  {/* </p> */}
+                  <a
+                    href="#"
+                    className="hover:underline text-[14px] md:text-[16px] lg:text-[18px] font-normal leading-6"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    tiktok
+                  </a>
                 </li>
               </ul>
             </div>

@@ -9,9 +9,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
 
-import Gallery1 from '../../public/gallery1.jpg';
-import Gallery2 from '../../public/gallery2.jpg';
-import Gallery3 from '../../public/gallery3.jpg';
+import Gallery1 from '@/public/images/gallery1.jpg';
+import Gallery2 from '@/public/images/gallery2.jpg';
+import Gallery3 from '@/public/images/gallery3.jpg';
 
 const galeryImages = [
   { id: 1, src: Gallery1, title: 'Carpathian mountains' },

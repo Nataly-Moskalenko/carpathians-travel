@@ -2,6 +2,8 @@
 
 import { useForm } from 'react-hook-form';
 
+import IconError from 'public/icons/formError.svg';
+
 export default function FormContacts() {
   const {
     register,
@@ -34,17 +36,8 @@ export default function FormContacts() {
             className="text-[13px] lg:text-[20px] font-extralight leading-6 bg-gray w-[280px] md:w-[221px] lg:w-[293px]"
           />
           {errors.fullName && (
-            <p className="absolute right-0 top-[52px] flex items-center justify-end">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path
-                  d="M4.375 4.375L13.625 13.625M13.625 4.375L4.375 13.625"
-                  stroke="#FF5757"
-                  stroke-width="0.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+            <p className="absolute right-0 lg:right-5 top-[52px] flex items-center justify-end">
+              <IconError />              
               <span className="text-orange text-[12px] font-extralight leading-6 tracking-[2.4px]">
                 Incorrect name
               </span>
@@ -67,16 +60,7 @@ export default function FormContacts() {
           />
           {errors.email && (
             <p className="absolute right-0 top-[52px] flex items-center justify-end">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path
-                  d="M4.375 4.375L13.625 13.625M13.625 4.375L4.375 13.625"
-                  stroke="#FF5757"
-                  stroke-width="0.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+              <IconError />              
               <span className="text-orange text-[12px] font-extralight leading-6 tracking-[2.4px]">
                 Invalid email
               </span>

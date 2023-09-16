@@ -2,6 +2,13 @@
 
 import { Link } from 'react-scroll';
 
+import IconLeftMobile from 'public/icons/buttonHeroLeftMobile.svg';
+import IconRightMobile from 'public/icons/buttonHeroRightMobile.svg';
+import IconLeftTablet from 'public/icons/buttonHeroLeftTablet.svg';
+import IconRightTablet from 'public/icons/buttonHeroRightTablet.svg';
+import IconLeftDesktop from 'public/icons/buttonHeroLeftDesktop.svg';
+import IconRightDesktop from 'public/icons/buttonHeroRightDesktop.svg';
+
 export default function ButtonHero() {
   return (
     <>
@@ -15,94 +22,14 @@ export default function ButtonHero() {
           </Link>
         </p>
       </button>
-      <svg
-        width="42"
-        height="53"
-        viewBox="0 0 42 53"
-        fill="none"
-        className="md:hidden absolute bottom-0"
-      >
-        <rect width="0.954545" height="11" fill="white" />
-        <rect width="42" height="1" fill="white" />
-        <rect width="0.954545" height="11" transform="matrix(1 0 0 -1 0 53)" fill="white" />
-        <rect width="42" height="1" transform="matrix(1 0 0 -1 0 53)" fill="white" />
-      </svg>
-      <svg
-        width="42"
-        height="53"
-        viewBox="0 0 42 53"
-        fill="none"
-        className="md:hidden absolute bottom-0 right-0"
-      >
-        <rect width="0.954545" height="11" transform="matrix(-1 0 0 1 42 0)" fill="white" />
-        <rect width="42" height="1" transform="matrix(-1 0 0 1 42 0)" fill="white" />
-        <rect
-          x="42"
-          y="53"
-          width="0.954545"
-          height="11"
-          transform="rotate(180 42 53)"
-          fill="white"
-        />
-        <rect x="42" y="53" width="42" height="1" transform="rotate(180 42 53)" fill="white" />
-      </svg>
+      <IconLeftMobile className="md:hidden absolute bottom-0" />
+      <IconRightMobile className="md:hidden absolute bottom-0 right-0" />
 
-      <svg
-        width="35"
-        height="50"
-        viewBox="0 0 35 50"
-        fill="none"
-        className="hidden md:block lg:hidden absolute bottom-0"
-      >
-        <rect width="0.795455" height="11" fill="white" />
-        <rect width="35" height="1" fill="white" />
-        <rect width="0.795455" height="11" transform="matrix(1 0 0 -1 0 50)" fill="white" />
-        <rect width="35" height="1" transform="matrix(1 0 0 -1 0 50)" fill="white" />
-      </svg>
-      <svg
-        width="35"
-        height="50"
-        viewBox="0 0 35 50"
-        fill="none"
-        className="hidden md:block lg:hidden absolute bottom-0 right-0"
-      >
-        <rect width="0.795455" height="11" transform="matrix(-1 0 0 1 35 0)" fill="white" />
-        <rect width="35" height="1" transform="matrix(-1 0 0 1 35 0)" fill="white" />
-        <rect
-          x="35"
-          y="50"
-          width="0.795455"
-          height="11"
-          transform="rotate(180 35 50)"
-          fill="white"
-        />
-        <rect x="35" y="50" width="35" height="1" transform="rotate(180 35 50)" fill="white" />
-      </svg>
+      <IconLeftTablet className="hidden md:block lg:hidden absolute bottom-0" />
+      <IconRightTablet className="hidden md:block lg:hidden absolute bottom-0 right-0" />
 
-      <svg
-        width="44"
-        height="71"
-        viewBox="0 0 44 71"
-        fill="none"
-        className="hidden lg:block absolute bottom-6"
-      >
-        <rect width="1" height="11" fill="white" />
-        <rect width="44" height="1" fill="white" />
-        <rect width="1" height="11" transform="matrix(1 0 0 -1 0 71)" fill="white" />
-        <rect width="44" height="1" transform="matrix(1 0 0 -1 0 71)" fill="white" />
-      </svg>
-      <svg
-        width="44"
-        height="71"
-        viewBox="0 0 44 71"
-        fill="none"
-        className="hidden lg:block absolute bottom-6 right-6"
-      >
-        <rect width="1" height="11" transform="matrix(-1 0 0 1 44 0)" fill="white" />
-        <rect width="44" height="1" transform="matrix(-1 0 0 1 44 0)" fill="white" />
-        <rect x="44" y="71" width="1" height="11" transform="rotate(180 44 71)" fill="white" />
-        <rect x="44" y="71" width="44" height="1" transform="rotate(180 44 71)" fill="white" />
-      </svg>
+      <IconLeftDesktop className="hidden lg:block absolute bottom-6" />
+      <IconRightDesktop className="hidden lg:block absolute bottom-6 right-6" />
     </>
   );
 }

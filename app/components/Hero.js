@@ -28,7 +28,7 @@ export default function Hero() {
         </p>
       </div>
       <div className="mt-6 md:mt-[144px] lg:mt-[304px] w-[280px] md:w-[230px] lg:w-[294px]">
-        <p className="text-[14px] font-extralight leading-[20px] md:text-[16px] lg:text-[18px] leading-[24px]">
+        <p className="text-[14px] font-extralight leading-[20px] md:text-[16px] lg:text-[18px] lg:leading-[24px]">
           We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy
           stunning views, exciting expeditions, and the best service!
         </p>
