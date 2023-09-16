@@ -23,10 +23,10 @@ Mobile first approach is used.
 Tailwind CSS was used for styling.
 
 <div align="center">
-  <img src="./public/CarpTravel1.jpg" width="1200" height="auto"/>
-  <img src="./public/CarpTravel2.jpg" width="1200" height="auto"/>
-  <img src="./public/CarpTravel3.jpg" width="1200" height="auto"/>
-  <img src="./public/CarpTravel4.jpg" width="1200" height="auto"/>
-  <img src="./public/CarpTravel5.jpg" width="1200" height="auto"/>
-  <img src="./public/CarpTravel6.jpg" width="1200" height="auto"/>
+  <img src="./public/images/CarpTravel1.jpg" width="1200" height="auto"/>
+  <img src="./public/images/CarpTravel2.jpg" width="1200" height="auto"/>
+  <img src="./public/images/CarpTravel3.jpg" width="1200" height="auto"/>
+  <img src="./public/images/CarpTravel4.jpg" width="1200" height="auto"/>
+  <img src="./public/images/CarpTravel5.jpg" width="1200" height="auto"/>
+  <img src="./public/images/CarpTravel6.jpg" width="1200" height="auto"/>
 </div>
