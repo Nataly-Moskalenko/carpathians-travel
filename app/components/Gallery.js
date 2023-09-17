@@ -9,24 +9,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
 
-import Gallery1 from '@/public/images/gallery1.jpg';
-import Gallery2 from '@/public/images/gallery2.jpg';
-import Gallery3 from '@/public/images/gallery3.jpg';
-
-const galeryImages = [
-  { id: 1, src: Gallery1, title: 'Carpathian mountains' },
-  { id: 2, src: Gallery2, title: 'Carpathian lake' },
-  { id: 3, src: Gallery3, title: 'Carpathian forest' },
-  { id: 4, src: Gallery1, title: 'Carpathian mountains' },
-  { id: 5, src: Gallery2, title: 'Carpathian lake' },
-  { id: 6, src: Gallery3, title: 'Carpathian forest' },
-];
-
-const galeryImagesMobile = [
-  { id: 1, src: Gallery1, title: 'Carpathian mountains' },
-  { id: 2, src: Gallery2, title: 'Carpathian lake' },
-  { id: 3, src: Gallery3, title: 'Carpathian forest' },  
-];
+import data from '../data/data.json';
 
 export default function Gallery() {
   const prevRef = useRef(null);
@@ -47,15 +30,21 @@ export default function Gallery() {
           </span>
         </h2>
         <ul className="flex flex-col gap-6 md:hidden">
-          {galeryImagesMobile.map((image) => (
-            <li key={image.id}>
-              <Image className="w-[280px] h-[187px] mx-auto" src={image.src} alt={image.title} />
+          {data.gallery.map((image, i) => (
+            <li key={i}>
+              <Image
+                className="w-[280px] h-[187px] mx-auto"
+                src={image.src}
+                alt={image.title}
+                width={280}
+                height={187}
+              />
             </li>
           ))}
         </ul>
         <div className="hidden md:block">
           <Swiper
-            modules={[Navigation, A11y, Autoplay, EffectCoverflow]}            
+            modules={[Navigation, A11y, Autoplay, EffectCoverflow]}
             slidesPerView={3}
             navigation={{
               prevEl: prevRef.current,
@@ -68,20 +57,18 @@ export default function Gallery() {
             effect={'coverflow'}
             grabCursor={true}
             coverflowEffect={{
-              rotate: 0,              
+              rotate: 0,
               scale: 0.5,
               modifier: 1,
               slideShadows: true,
             }}
           >
-            {galeryImages.map((image) => (
-              <SwiperSlide key={image.id} className="md:w-[415px] md:h-[294px] lg:w-[606px] lg:h-[429px] mx-auto">
-                <Image                 
-                  src={image.src}
-                  alt={image.title}
-                  width={606}
-                  height={294}
-                />
+            {data.gallery.concat(data.gallery).map((image, i) => (
+              <SwiperSlide
+                key={i}
+                className="md:w-[415px] md:h-[294px] lg:w-[606px] lg:h-[429px] mx-auto"
+              >
+                <Image src={image.src} alt={image.title} width={606} height={294} />
               </SwiperSlide>
             ))}
             <button

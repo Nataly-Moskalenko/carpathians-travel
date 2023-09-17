@@ -1,9 +1,11 @@
 'use client';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import { Link } from 'react-scroll';
 
-const sections = ['About', 'Services', 'Gallery', 'Contacts'];
+import data from '../data/data.json';
 
 export default function Modal({ onClick }) {
   return ReactDOM.createPortal(
@@ -17,7 +19,7 @@ export default function Modal({ onClick }) {
           Close
         </button>
         <nav className="pt-[170px] text-center flex flex-col gap-[48px] text-[18px] font-normal leading-[1.2] tracking-[1.8px]">
-          {sections.map((section) => (
+          {data.sections.map((section) => (
             <Link
               key={section}
               className="cursor-pointer hover:underline"
@@ -37,3 +39,7 @@ export default function Modal({ onClick }) {
     document.getElementById('modal-root')
   );
 }
+
+Modal.propTypes = {
+  onClick: PropTypes.func,
+};

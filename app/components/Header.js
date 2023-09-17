@@ -5,11 +5,11 @@ import { Link } from 'react-scroll';
 
 import Logo from './Logo';
 import Modal from './Modal';
+import data from '../data/data.json';
 
 export default function Header() {
   const [showModal, setShowModal] = useState(false);
-  const toggleModal = () => setShowModal(!showModal);
-  const sections = ['About', 'Services', 'Gallery', 'Contacts'];
+  const toggleModal = () => setShowModal(!showModal); 
 
   return (
     <header className="relative max-w-[280px] md:max-w-[1392px] mx-auto">
@@ -24,7 +24,7 @@ export default function Header() {
         </button>
         {showModal && <Modal onClick={toggleModal} />}
         <nav className="hidden md:flex md:gap-x-6 lg:gap-x-14 text-[14px] font-normal tracking-[1.4px]">
-          {sections.map((section) => (
+          {data.sections.map((section) => (
             <Link
               key={section}
               className="cursor-pointer hover:underline"

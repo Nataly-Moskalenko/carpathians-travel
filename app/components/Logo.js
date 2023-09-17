@@ -10,6 +10,7 @@ export default function Logo() {
         className="w-[59px] h-[21px] lg:w-[61px] lg:h-[22px]"
         src={LogoImage}
         alt="Logo CarpTravel"
+        aria-label="Logo CarpTravel"
         priority
       />
       <p className="font-[Karantina] text-[14px] font-[400] leading-[1.2]">CarpTravel</p>

@@ -10,56 +10,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
 import ServiceCard from './ServiceCard';
+import data from '../data/data.json';
 
-import Photo01 from '@/public/images/service1.jpg';
-import Photo02 from '@/public/images/service2.jpg';
-import Photo03 from '@/public/images/service3.jpg';
-import Photo04 from '@/public/images/service4.jpg';
-import Photo05 from '@/public/images/service5.jpg';
-
-const cards = [
-  {
-    number: '01',
-    title: 'ATVs Traveling',
-    text: 'Feel the adrenaline rush',
-    description:
-      'Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.',
-    image: Photo01,
-  },
-  {
-    number: '02',
-    title: 'Rock climbing',
-    text: 'Destroy your limitations',
-    description:
-      'Overcome the peaks of the Carpathians in a unique way - climbing. Make your own way to the heights and find inner peace in the embrace of the mighty rocks.',
-    image: Photo02,
-  },
-  {
-    number: '03',
-    title: 'Hot air ballooning',
-    text: 'Get inspired',
-    description:
-      'Feel Zen over the mountain peaks! Hot air ballooning gives you incredible impressions and panoramas of the Carpathians that seem endless.',
-    image: Photo03,
-  },
-  {
-    number: '04',
-    title: 'Skydiving',
-    text: 'Overcome your fears',
-    description:
-      "Fly in the sky over the Carpathians! Experienced instructors will help you realize your dream of free flight. Remember the incredible emotions and panoramas from a bird's eye view forever.",
-    image: Photo04,
-  },
-  {
-    number: '05',
-    title: 'Rafting',
-    text: 'Trust the flow',
-    description:
-      'Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.',
-    image: Photo05,
-  },
-];
-
+const cards = data.cards;
 const menu = Object.values(cards.map((card) => card.title));
 
 export default function Services() {
